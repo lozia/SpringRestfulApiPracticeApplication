@@ -16,14 +16,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/student")
 public class StudentController {
 
     @Autowired
     StudentService studentService;
 
-    @CrossOrigin(origins = "http://localhost:4200")
+//    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping
     public ResponseEntity<StudentDto> createStudent(@RequestBody StudentDto studentDto){
         if (studentDto.getEmail().isEmpty() || studentDto.getFirstName().isEmpty() || studentDto.getLastName().isEmpty()){
@@ -40,7 +40,7 @@ public class StudentController {
         return ResponseEntity.ok(studentDto);
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+//    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping
     public ResponseEntity<List<StudentDto>> getAllStudents(){
         List<StudentDto> students = studentService.getAllStudents();
