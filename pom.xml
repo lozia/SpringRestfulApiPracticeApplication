@@ -8,12 +8,12 @@
         <version>3.2.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>SpringBootRestfulAPIPractice</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <name>SpringBootRestfulAPIPractice</name>
-    <description>SpringBootRestfulAPIPractice</description>
+    <groupId>me.louie-lee</groupId>
+    <artifactId>StudentManagerAPI</artifactId>
+    <version>1.0-PREVIEW</version>
+    <packaging>jar</packaging>
+    <name>StudentManagerAPI</name>
+    <description>Student Manager Backend Project</description>
     <properties>
         <java.version>17</java.version>
     </properties>
